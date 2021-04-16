@@ -36,7 +36,7 @@ function(X, i, j, r=NULL, breaks=NULL, ..., correction=c("rs", "km", "han"))
   if(sum(I) == 0) stop("No points are of type i")
         
   if(i == j){
-    result <- Gest(X[I], r=r, breaks=breaks, correction=correction ...)
+    result <- Gest(X[I], r=r, breaks=breaks, correction=correction, ...)
   } else {
     J <- (marx == j)
     if(sum(J) == 0) stop("No points are of type j")
